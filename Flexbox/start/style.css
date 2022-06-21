@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.aside {
+
+    display: flex;
+    width: 200px;
+    min-height: 100vh;
+    background-color: rgb(0, 139, 42);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #2b2b2b;
+    font-size: 20px;
+}
+
+#ciuchino {
+    width: 50px;
+    border-radius: 100%;
+
+}
+
+#logo {
+    width: 150px;
+    border-radius: 100%;
+
+}
+
+ul .links {
+
+    color: #2b2b2b;
+
+}
+
+.links:hover {
+    transition: 0.3s;
+
+    color: #2b2bb2;
+}
+
+#id {
+    flex: 1;
+
+}
