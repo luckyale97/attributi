@@ -1,0 +1,36 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+
+.container {
+
+    border: 1px solid $color-primary;
+    padding: 25px;
+
+section {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+article  {
+
+    border: 1px solid $color-tertiary;
+
+}
+h1 {
+    color: $color-tertiary;
+    text-decoration: underline $color-secondary;
+    display: flex;
+    justify-content: center;
+    
+}
+.ac {
+    color: $color-secondary;
+    
+}
+.bd {
+    color: $color-primary;
+}
+}

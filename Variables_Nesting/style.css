@@ -1,0 +1,32 @@
+.exercise {
+  border: 1px solid red;
+}
+.exercise .exercise-title {
+  color: green;
+}
+
+.container {
+  border: 1px solid red;
+  padding: 25px;
+}
+.container section {
+  display: flex;
+  flex-direction: row;
+}
+.container article {
+  border: 1px solid green;
+}
+.container h1 {
+  color: green;
+  text-decoration: underline blue;
+  display: flex;
+  justify-content: center;
+}
+.container .ac {
+  color: blue;
+}
+.container .bd {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
