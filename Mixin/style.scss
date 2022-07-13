@@ -1,0 +1,43 @@
+div {
+
+    border: solid red;
+
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    h1 {
+
+        color: green;
+        text-decoration: underline blue;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+}
+
+@mixin article-style ($color, $border, $font-size) {
+
+    color: $color;
+    border: $border;
+    font-size: $font-size;
+}
+
+article {
+    @include article-style (red, 1px solid green, 1rem)
+}
+
+article:nth-of-type(odd) {
+
+    @include article-style (blue, 1px solid green, 1rem)
+}
+
+section:last-of-type article {
+
+    @include article-style (green, 1px solid blue, 24px)
+}
