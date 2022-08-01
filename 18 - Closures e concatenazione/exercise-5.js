@@ -1,17 +1,17 @@
 function memoize(fn) {
   let cache = {};
   return (num) => {
-    if (cache[num]){
+    if (cache[num]) {
       console.log('Fetching from cache for' + num);
       return cache[num];
     }
- 
 
-console.log('Calculating result for' + num);
-const output = fn(num)
-cache[num] = output;
-return output;
- }
+
+    console.log('Calculating result for' + num);
+    const output = fn(num)
+    cache[num] = output;
+    return output;
+  }
 }
 
 function factorial(x) {
@@ -26,4 +26,7 @@ let factory = memoize(factorial);
 console.log(factory(10));
 console.log(factory(6));
 console.log(factory(5));
+
+/* Ho fatto un fetching in più fuori traccia per controllare che funzionasse */
+
 console.log(factory(10));
