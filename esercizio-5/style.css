@@ -1,0 +1,39 @@
+* {
+
+    margin: 0;
+
+}
+
+body, html {
+
+    width: 100%;
+    height: 100%;
+}
+h2, td {
+
+    border: 1px solid ;
+    
+}
+
+.container {
+
+    width: auto;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 5%;
+    text-align: center;
+    border: 3px solid black;
+
+}
+
+
+ @media only screen and (min-width: 150px) {
+    .container { flex-direction: column;
+                 justify-items: center;
+                 width: 100%;
+    }
+ }
